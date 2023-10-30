@@ -1,0 +1,161 @@
+<!-- solutions like medicine discorvery, tackling diseases. Encryption and private keys. quantumn physics itself, car and air traffic conrol. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- 
+          This is the head section. 
+          It includes optional information about the web page (author, date, etc)
+          It must include the charater set and the title
+        -->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Lab 1: Personal Portfolio</title>
+  <!--  add CSS style to the header with <link> -->
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+
+</head>
+
+<!--  static styling can be done within body with 'style=""' -->
+
+<body>
+  <a id="top"></a>
+  <!-- Heading / nav bar layout -->
+  <header>
+    <h1>QUANTUM COMPUTING</h1>
+  </header>
+
+  <hr>
+  <nav>
+    <a href="index.html" >Q~Home</a>
+    <a href="fundamentals.html">Q~Fundamentals</a>
+    <a href="computing.html">Q~Computing</a>
+    <a href="computing.html"style="color: #ff6f00; border-bottom: 4px #ff6f00 solid;font-size: 2em;">Q~Solutions</a>
+    <a href="map.html">Q~Map</a>  
+  </nav>
+  <br>
+  <!--   MAIN BODY -->
+  <main>
+
+    <h2>OPTIMIZATION</h2>
+    <div class="right_just">
+    <p class="main_text">
+     For example, optimzing a complex "traveling sales man" problems can increase logistics in transportaion, delivery, and more, by maximizing efficient routes or destinations. There are many farms, markets, and many more wide spread places across a country like Germany. Optimizing routes, destinations, and all other logisitcs can be a huge benefit for all parties involved, hopefully benefiting even us consumers in getting cheaper, fresher products, faster. This can be known as <i>combinatorial optimizations</i>.      
+    </p>
+      <figure>
+        <a href="/imgs/quant_comb.png" target="_blank"> 
+        <img class="ex1" src="/imgs/quant_comb.png" alt="combinatorial optimization problem example"></a>
+        <figcaption>
+          Shortest path through 15 cities in Germany - <a href="https://en.wikipedia.org/wiki/Combinatorial_optimization#/media/File:TSP_Deutschland_3.png" target="_blank"> Link </a></figcaption>
+      </figure>
+    </div>
+<br>
+    <div class="right_just">
+      <figure>
+        <a href="/imgs/quant_data_fit.png" target="_blank"> 
+        <img class="gallery" src="/imgs/quant_data_fit.png" alt="data fitting example of least squares"></a>
+        <figcaption>
+          Maths behind the least squares problem - <a href="https://en.wikipedia.org/wiki/Quantum_optimization_algorithms" target="_blank"> Link </a></figcaption>
+      </figure>
+    <p class="main_text">
+     Another example is of data fitting, or curve fitting. This is a process of aligning a curve, or function, that has the best fit along a series of data points on a graph. This is heavily related to regression analysis, which has additional focus on things like statisitical inference: how much uncertainty there is in the curve along the data in the graph. A common problem in this area is of the least squares: "minimizing the sum of the squares of differences between the data points and the fitted function". Given <i>N</i> input data popints, and <i>M</i> continuous functions, the algorithm should find and give a result of a linear combination. Rather, it finds the complex coefficients resulting in a vector of said coefficients. 
+    </p>      
+    </div>    
+    <a class="top" href="#top" color=""> Back to top </a>
+    <!--   NEXT SECTION  -->
+    <hr>
+    <br>
+      <h2>SIMULATIONS </h2>
+    <div class="right_just">
+    <p class="main_text">
+    Naturally it is said that chemistry is quantum, meaning at an atmoic level molecules behave according to quantum mechanical properties, like an electron. Sometimes an electron acts like a wave, or a particle under different conditions. 
+     
+
+    </p>
+    </div>
+    <a class="top" href="#top" color=""> Back to top </a>
+     <hr>
+    <br>
+      <h2>ARTIFICIAL INTELLIGENCE </h2>
+    <div class="right_just">
+    <p class="main_text">
+
+     Machine Learning
+
+    </p>
+    </div>
+    <a class="top" href="#top" color=""> Back to top </a>
+     <hr>
+    <br>
+      <h2>MEDICINE </h2>
+    <div class="right_just">
+    <p class="main_text">
+
+     Medicine 
+      <br>
+      Tackling diseases
+
+    </p>
+    </div>
+    <a class="top" href="#top" color=""> Back to top </a>
+     <hr>
+    <br>
+      <h2>ENCRYPTION </h2>
+    <div class="right_just">
+    <p class="main_text">
+    Or rather, <i>Decryption</i>. Quantum cryptography has its place, but a more popular and thrilling topic is to talk about the threat of a quantum computer decrypting all our currently secure data. RSA encryption has been a standard for secure data transmission, taking advantage of extremely large prime numbers and factorization of said primes. A classical computer would have to brute force these factors, as there is no current solution or algorithm for these massively large numbers. A fun fact here: the largest publicly known RSA number had <i>829 bits</i>, and took over <i>2,700 CPU years</i> to crack. Most RSA keys are typically 1.5 to 4 times larger than this record. Therefore, quantum computing magic comes in, and if leveraged correctly, would be able to factor large RSA keys in polynomial time using Shor's algorithm. For a standard 2048-bit RSA key, it could take <i>millions or billions</i> of years for a classical computer to crack! Astronimically unbelievable!
+    </p>
+      <figure>
+        something
+      </figure>
+    <p> 
+      Back in 1994,(3 years before I was even born), Peter Shor developed a quantum algorithm to be able to factor large prime numbers. This algorithm assumes the quantum computer has enough qubits, and minimal, maybe zero, need for error correction. This algorithm is known as Shor's algorithm, and is the key to cracking RSA encryption, but don't worry! We are very very far aware from developing a quantum computer that has these "perfect" scenarios for Shor's algorithm to work, so all our data is still safe for the forseeable future. 
+    </p>
+      <figure>
+        <a href="/imgs/shors_alg.png" target="_blank"> 
+        <img class="gallery" src="/imgs/shors_alg.png" alt="quantum subroutine in Shor's algorithm"></a>
+        <figcaption>
+          Quantum subroutine in Shor's algorithm - <a href="https://en.wikipedia.org/wiki/Shor%27s_algorithm#/media/File:Shor's_algorithm.svg" target="_blank"> Link </a></figcaption>
+      </figure>
+      
+    </div>
+    <a class="top" href="#top" color=""> Back to top </a>
+    <hr>
+    <br>
+    <h2>RESOURCES</h2>
+    <div style="display:flex; justify-content: center;">
+    <p style="font-family: Helvetica; font-size: 1.25em; text-align: left;">
+      Credits for some of this information and graphics to these resources below:
+    </p></div>
+    
+    <div class="right_just">
+      <p class="main_text"><br> ParityQC and this youtube video: <br> <strong> <i>Solving Optimization Problems with Quantum Computers</i></strong> 
+        <iframe height="252" width="448" src="https://www.youtube.com/embed/VvbYR5hCFVo?si=jwYkZbVd0Ak4ZvNK" title="Solving Optimization Problems with Quantum Computers" frameborder="0"  allowfullscreen></iframe>
+      </p>
+
+      
+      <br>
+      <p class="main_text"><br> ParityQC and this youtube video: <br> <strong> <i>Solving Optimization Problems with Quantum Computers</i></strong> 
+        <iframe height="252" width="448" src="https://www.youtube.com/embed/VvbYR5hCFVo?si=jwYkZbVd0Ak4ZvNK" title="Solving Optimization Problems with Quantum Computers" frameborder="0"  allowfullscreen></iframe>
+      </p>
+    </div>
+    <a class="top" href="#top" color=""> Back to top </a>
+  
+  </main>
+  <!-- bottom of page -->
+  <br>
+  <footer>
+
+    <div>
+      <br>     
+      CST_336 Internet Programming. 2023&copy; Bonavida<br>
+      <strong> Disclaimer:</strong> This website is under construction and is both functional and non-functional, simulatenously - A functional superposition. Currently for academic purposes.
+    </div>
+  </footer>
+</body>
+
+</html>

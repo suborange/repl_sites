@@ -1,0 +1,135 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+header, main, nav, footer {
+  text-align: center;
+}
+
+nav a {
+  padding: 15px;
+  padding-bottom: 4px;
+  font-size: 1.6em; 
+  /* em is like a multiplyer of current font-size -> 1em = default font-16px  */
+  text-decoration: none;
+  font-weight: bold;
+  color: #FAF8D9;
+}
+
+nav a:hover {
+  border-bottom: 4px #ffb300 solid;
+  color: #ffb300;
+  font-size: 2em;
+  transition: .6s;
+}
+a.top {
+  color: #ffb300;
+  text-decoration: none;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+figure a:link{
+  color:#3af8f5
+}
+figure a:visited {
+  color: #ba2bee;
+}
+figure figcaption {
+  font-size: 1.2em;
+  font-weight: bold;
+  /* font-style: italic; */
+}
+
+.main_text a:link{
+  color:#3af8f5
+}
+.main_text a:visited{
+  color: #ba2bee;
+}
+/* this should work with active element?  */
+/* nav>.active>a {
+  color: #9e64b9;
+} */
+
+
+
+body {
+  background-color: #22314E;
+  font-family: Roboto;
+  font-weight: 200;
+  color: #FAF8D9;
+  margin: 0;
+  padding: 0;
+}
+footer {  
+  background-color: #474747;
+  color: #000017;
+  display: flex;
+  justify-content: center;  
+}
+footer div {
+  font-size: 1em;
+}
+footer strong {
+  font-size: 1.32em;
+}
+
+
+ul {
+  /* margin: 0 auto; */
+  /* width: 500px; */
+  text-align: left;
+}
+
+img.base {
+  /* margin: 0 auto; */
+  width: 380px;
+}
+img.gallery {
+  width: 530px;
+}
+img.cat {
+  width: 450px;
+}
+img.ex1 {
+  width: 320px;
+}
+img.h1 {
+  height: 260px;
+}
+iframe {
+  height: 1920;
+  width: 1080;  
+  
+}
+
+h1 {
+  color: #ff6f00;
+  font-size: 4em;
+  font-family: 'Sedgwick Ave Display', cursive;
+}
+
+h2 {
+  color: #ffb300;
+  font-size: 3em;
+  font-family: 'Sedgwick Ave Display', cursive;
+}
+
+.main_text {  
+  /* margin: 0 auto; */
+  width: 500px;  
+  font-family: Helvetica;
+  /* font-weight: bold; */
+  font-size: 1.27em;
+  text-align: left;
+}
+
+.right_just {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 0 auto; */
+}
+hr {
+  border-color: #ff6f00;
+}

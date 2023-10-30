@@ -1,0 +1,100 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+header, main, nav, footer {
+  text-align: center;
+}
+
+nav a {
+  padding: 15px;
+  padding-bottom: 4px;
+  font-size: 1.8em; 
+  /* em is like a multiplyer of current font-size -> 1em = default font-16px  */
+  text-decoration: none;
+  color: #FAF8D9;
+}
+
+nav a:hover {
+  border-bottom: 4px #d3afe4 solid;
+  color: #d3afe4;
+  font-size: 2em;
+  transition: .9s;
+}
+/* this should work with active element?  */
+/* nav>.active>a {
+  color: #9e64b9;
+} */
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background-color: #121212;
+  font-family: Roboto;
+  color: #e88c8c;
+  margin: 0;
+  padding: 0;
+}
+footer {  
+  color: #07a65c;
+  display: flex;
+  justify-content: center;  
+}
+footer div {
+  font-size: 0.8em;
+}
+footer strong {
+  font-size: 1.2em;
+}
+footer img {  
+  width: 60px;
+  height: 60px;
+  /* background-color: white; */
+  
+}
+
+table {
+  margin: 0 auto;
+}
+
+td {
+  padding-right: 10px;
+  font-size: 1.3em;
+}
+td strong {
+  color: orange;
+}
+#table_header {
+  background-color: #817e7e;
+}
+.table_row {
+  background-color: #292929;
+}
+#contact, iframe {
+  margin: 0 auto;
+}
+iframe {
+  display: block;
+}
+
+ul {
+  margin: 0 auto;
+  width: 500px;
+  text-align: left;
+}
+.hobby {
+  color: rebeccapurple;
+  font-weight: bold;
+  
+}
+img {
+  width: 200px;
+}
+h1 {
+  color: #FAF8D9;
+  font-size: 3em;
+  font-family: 'Sedgwick Ave Display', cursive;
+}

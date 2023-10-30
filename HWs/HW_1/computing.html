@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- 
+          This is the head section. 
+          It includes optional information about the web page (author, date, etc)
+          It must include the charater set and the title
+        -->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Lab 1: Personal Portfolio</title>
+  <!--  add CSS style to the header with <link> -->
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+
+</head>
+
+<!--  static styling can be done within body with 'style=""' -->
+
+<body>
+  <a id="top"></a>
+  <!-- Heading / nav bar layout -->
+  <header>
+    <h1>QUANTUM COMPUTING</h1>
+  </header>
+
+  <hr>
+  <nav>
+    <a href="index.html">Q~Home</a>
+    <a href="fundamentals.html" >Q~Fundamentals</a>
+    <a href="computing.html" style="color: #ff6f00; border-bottom: 4px #ff6f00 solid;font-size: 2em;">Q~Computing</a>
+    <a href="solutions.html">Q~Solutions</a>
+    <a href="map.html">Q~Map</a>
+  </nav>
+  <br>
+  <!--   MAIN BODY -->
+  <main>
+
+    <h2>COMPUTING</h2>
+    <div class="right_just">
+    <p class="main_text">
+      In a general sense, there are a few key components that allow a quantum computer to work successfully. The first is it being made of qubits, having the ability to be in a state called a <strong><em>Superposition</em></strong>. Superpositions allows for a large amount of information to be eventually measured, remembering that there is a relative probability for each qubit to end up in a measureable state of <strong><em>0, or 1</em></strong>. Additionally, qubits exhibit what is called <strong><em>Entanglement</em></strong>. Furthermore, <strong><em>Intereference & Wavefunctions</em></strong>, allow for the quantum properties to be calculated and controlled. Finally, to be able to utilize and measure superpositions, this computer must be able to model logic, one example being the <strong><em>Gate Model</em></strong>. All of these components are pertinent for a quantum computer system to function, and as research and development continues, one day we will have extremely powerful quantum computers.
+     
+    </p>
+      <figure>
+        <a href="/imgs/superposition_1.png" target="_blank">
+          <img class="h1" src="/imgs/superposition_1.png" alt="basic graphic of quantum superposition"></a>
+        <figcaption>
+          Basics of quantum qubits
+        </figcaption>
+      </figure>
+    </div>
+    <a class="top" href="#top" color=""> Back to top </a>
+    <hr>
+    <br>      
+    <!--  https://www.youtube.com/watch?v=lt4OsgmUTGI -->
+<h2>SUPERPOSITION</h2>
+    <div class="right_just">
+    <figure>
+      <a href="imgs/bits_columns.png" target="_blank">
+      <img class="base" src="imgs/bits_columns.png" alt="Picture of a qubit resulting in a 0 or 1"></a>
+      <figcaption> <strong><em>2 bits contain 2 pieces of data</em></strong></figcaption>      
+    </figure>
+
+    <p class="main_text">
+      To quickly recap, a superposition is a property that allows a qubit to be in either a low energy (0) state, high energy (1) state, or anything in between simultaneously. This idea seems extremely bizzare, and is difficlut to acknowledge that this phenomenon actually exists. This is powerful and allows for much more information than any classical bits we utilize today. First, I think this may be a great way to both see and think about the real differences between qubits and bits. The figure on the left, shows that 2 bits have 4 potential results, but only 2 bits determine the result, essentially only going down the 2 columns. The figure on the right, shows that qubits also have 4 potential results, but because of superposition, all 4 qubits determine the result, essentially going across all 4 rows. This gives the mind-boggling comparison that an N number of qubits, contains 2<sup>N</sup> amount of information compared to bits. 
+    </p>
+      <figure>
+        <a href="imgs/qubits_rows.png" target="_blank">
+        <img class="base" src="imgs/qubits_rows.png" alt="Picture of a qubit superposition"></a>
+        <figcaption> <strong><em>2 qubits contain 4 pieces of data</em></strong></figcaption>        
+      </figure>
+
+    </div>
+      <a class="top" href="#top" color=""> Back to top </a>
+    <hr>
+    <br>
+    <h2>ENTANGLEMENT</h2>
+    <div class="right_just">
+    <p class="main_text">
+      Qubits obey another property called <strong><em>Entanglement</em></strong>. This is also one of the more bizzare phenomenon to try and acknowledge its very real existance. With classical bits, each bit is independant and do not have any influence over another. Like most concepts, this is the opposite for qubits, where each qubit are entagled with each other, becoming one large quantum state together. When entangled, the individual probabilites calculate to become a whole distribution of all the possible states. So for 2 qubits -> 00,01,10, and 11. 
+    </p>
+      <figure>
+        <a href="imgs/entaglement.gif" target="_blank">
+        <img class="base" src="/imgs/entaglement.gif" alt="GIF of entaglement between 2 qubits"></a>
+        <figcaption> <strong><em>Entaglement between 2 qubits</em></strong></figcaption>        
+      </figure>
+      </div>
+
+      <a class="top" href="#top" color=""> Back to top </a>
+      <hr>
+      <br>
+      <h2>INTERFERENCE & WAVEFUNCTIONS</h2>
+      <div class="right_just">
+      <p class="main_text">
+         Most of the representations of a qubit are of a sphere, rather known as a <strong><em>Block Sphere</em></strong>. However, a qubit does not actually look like this, and is really more described by a <strong><em>quantum wavefunction</em></strong>. A wavefunction is the fundamental mathematical description of everything in the realm of quantum mechanics. Wavefunctions are also used in topics like water waves, sound waves, and electromagnetic waves. 
+      </p>
+        <figure>
+          <a href="imgs/wave_func0.png" target="_blank">
+          <img class="cat" src="/imgs/wave_func0.png" alt="picture of quantum wavefunctions"></a>
+          <figcaption> <strong><em>Visual representation</em></strong></figcaption>        
+        </figure> 
+        </div>
+
+    <div class="right_just">
+      <figure>
+        <a href="imgs/wave_func1.png" target="_blank">
+        <img class="cat" src="/imgs/wave_func1.png" alt="picture of quantum wavefunctions"></a>
+        <figcaption> <strong><em>Quantum Wavefunctions</em></strong></figcaption>  
+        <hr><br>
+        <a href="imgs/wave_func2.png" target="_blank">
+        <img class="cat" src="/imgs/wave_func2.png" alt="picture of interference"></a>
+        <figcaption> <strong><em>Quantum Interference</em></strong></figcaption>        
+      </figure> 
+      <p class="main_text">
+        An electromagnetic wave has its own unique wave equation, so a quantum wavefunctions has its own wave equation as well, all describing the change of the wave function in space and time. These waves can be added together resulting in an overall wavefunction. This adding together of wavefunctions <em>is</em> the <strong><em>interference</em></strong>. Like waves of water, these waves can constructively interfere, or add together to form bigger waves; or destructively interfere, or cancel eachother to form no wave. This overall wave function is what affects the different probabilities of different states. Changing these states of qubits, changes the probabilities of different states and how they will be measured by the quantum computer. Logically, quantum engineers utilize constructive interference to increase the chances of a correct answer, and destructive interference to decrease chances of a wrong answer, ultimately leading to a correct result. This is where algorithms play there part, guiding these superpositioned qubits towrads the right answer.  
+      </p>
+
+        </div>
+
+    <!-- is quantum wave real? -->
+
+    <div class="right_just">
+      <figure>
+        <a href="imgs/wave_equation.png" target="_blank">
+        <img class="base" src="/imgs/wave_equation.png" alt="picture of wave equations"></a>
+        <figcaption> <strong><em>Quantum wave function in 2D </em></strong></figcaption>        
+      </figure> 
+    <p class="main_text">
+       One real difference, unlike all the other waves having something physical like water or electromagnetic fields, is that a quantam wave is not physically real and we cannot measure them directly. Since quantum waves describe quantum particles really well, something is most definitely going on. This left figure shows what the mathematical equation is for a quantum wavefunction. This right figure shows an example of graphing a 2D portion of the wave, creating a spiral. 
+    </p>
+      <figure>
+        <a href="imgs/wave_graph.png" target="_blank">
+        <img class="base" src="/imgs/wave_graph.png" alt="picture of quantum wave graphed"></a>
+        <figcaption> <strong><em>Graph of a portion of a quantum wavefunction</em></strong></figcaption>        
+      </figure> 
+      </div>
+<!-- what is wave function -->
+    <div class="right_just">
+      <p class="main_text">
+         So what actually is the quantum wavefunction? It can be described as a <strong><em>probability amplitude</em></strong>. This is nothing physical on its own, and only when calculated by the mod squared of the amplitude, can result in the probability of the particle being at any point within the one-dimensional space. This result gives the position of a particle from this wavefunction. Furthermore, this calculation gives all other measureable phyiscal quantities like momentum, energy, or spin, with each requiring its own mathematical operations. All in all, this is a mathematical tool, which really keeps track of all properties of a quantum particle, and expresses our observations of the probabilistic nature of where particles are when experimented on. 
+      </p>
+        <figure>
+          <a href="imgs/wave_probability.png" target="_blank">
+          <img class="cat" src="/imgs/wave_probability.png" alt="picture of the resulting wave and its probability"></a>
+          <figcaption> <strong><em>Probability of a particles position</em></strong></figcaption>        
+        </figure> 
+        </div>
+    
+      <a class="top" href="#top" color=""> Back to top </a>
+    <hr>
+    <br>
+    <h2>MODELS</h2>
+    <div class="right_just">
+    <p class="main_text">
+      One popular, and understood model for quatum computers is the <strong><em>Gate Model</em></strong>, or circuit model, which has similarities to classical models for computing. This model has the collection of qubits which are entangled with eachother, and then have numerous gates through out to be able to perform operations on a small number of qubits. These gates allow for the qubits to change states, without any measurement yet. These gates build up to create an algorithm, that are applied to qubits in a certain order, ending with the measurement at the end. Hopefully, this produces deterministic results and giving you the answer to the problem you are trying to solve. 
+    </p>
+      <figure>
+        <a href="/imgs/gate_model1.png" target="_blank">
+        <img class="cat" src="/imgs/gate_model1.png" alt="graphic of gate model setup"></a>
+        <figcaption>
+          A simple graphic of the Gate Model
+        </figcaption>
+      </figure>
+      </div>
+    <br>
+    <div class="right_just">
+      <figure>
+        <a href="/imgs/gate_model.gif" target="_blank">
+        <img class="cat" src="/imgs/gate_model.gif" alt="gif of gate altering state of gate model setup"></a>
+        <figcaption>
+          A gate altering the state of entagled qubits
+        </figcaption>
+      </figure>
+    <p class="main_text">   
+        What these gates are realling trying to do, is to modify and alter the qubits to point in different directions, essentially affecting the probability until the final state that will get measured. These simple gates are used to design more complex gates that build up to an algorithm to solve a aspecific problem. These algorithms manipulate the qubits, in hopes the measurement will give the desired result.
+    </p>
+      <figure>
+        <a href="/imgs/gates_1.png" target="_blank">
+        <img class="cat" src="/imgs/gates_1.png" alt="graphic of algorithm using gates"></a>
+        <figcaption>
+          An algorithm built up from some logicial gates
+        </figcaption>
+      </figure>
+      </div>
+
+ 
+
+    
+      <a class="top" href="#top" color=""> Back to top </a>
+    <hr>
+      <br>
+    <h2>RESOURCES</h2>
+    <div class="right_just">
+      <p class="main_text"><br> TheUnlockr and this youtube video: <br> <strong><em>Quantum Computers Explained in a Way Anyone Can Understand</em></strong> 
+        <iframe height="252" width="448" src="https://www.youtube.com/embed/zhQItO6_WoI?si=WQpFaojJvO4HjkZn" title="Quantum Computers Explained in a Way Anyone Can Understand" frameborder="0"  allowfullscreen></iframe>
+      </p>
+      <p class="main_text"><br> Domain of Science and this youtube video: <br><strong><em>The Map of Quantum Computing - Quantum Computing Explained</em></strong> 
+        <iframe height="252" width="448" src="https://www.youtube.com/embed/-UlxHPIEVqA?si=sBzDlB6YWRR3G5b4" title="The Map of Quantum Computing - Quantum Computing Explained" frameborder="0"  allowfullscreen></iframe>
+      </p>
+      <p class="main_text"><br> Domain of Science and this youtube video: <br><strong><em>The Quantum Wavefunction Explained</em></strong> 
+        <iframe height="252" width="448" src="https://www.youtube.com/embed/sOI4DlWQ_1w?si=j62flu_44x2BhtfH" title="The Quantum Wavefunction Explained" frameborder="0"  allowfullscreen></iframe>
+      </p>
+
+    </div>
+      <a class="top" href="#top" color=""> Back to top </a>
+   
+  </main>
+  <!-- bottom of page -->
+  <br>
+
+  <footer>
+
+    <div>
+      <br>     
+      CST_336 Internet Programming. 2023&copy; Bonavida<br>
+      <strong> Disclaimer:</strong> This website is under construction and is both functional and non-functional, simulatenously - A functional superposition. Currently for academic purposes.
+    </div>
+  </footer>
+</body>
+
+</html>

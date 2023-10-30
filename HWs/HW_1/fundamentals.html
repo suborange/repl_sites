@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- 
+          This is the head section. 
+          It includes optional information about the web page (author, date, etc)
+          It must include the charater set and the title
+        -->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Lab 1: Personal Portfolio</title>
+  <!--  add CSS style to the header with <link> -->
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+
+</head>
+
+<!--  static styling can be done within body with 'style=""' -->
+
+<body>
+  <a id="top"></a>
+  <!-- Heading / nav bar layout -->
+  <header>
+    <h1>QUANTUM COMPUTING</h1>
+  </header>
+
+  <hr>
+  <nav>
+    <a href="index.html" >Q~Home</a>
+    <a href="fundamentals.html" style="color: #ff6f00; border-bottom: 4px #ff6f00 solid; font-size: 2em;">Q~Fundamentals</a>
+    <a href="computing.html">Q~Computing</a>
+    <a href="solutions.html">Q~Solutions</a>
+    <a href="map.html">Q~Map</a>
+  </nav>
+  <br>
+  <!--   MAIN BODY -->
+  <main>
+    
+    <h2>FUNDAMENTALS</h2>
+    <div class="right_just">
+    <figure>
+      <a href="/imgs/qubit01.png" target="_blank">
+      <img class="base" src="/imgs/qubit01.png" alt="Picture of a qubit resulting in a 0 or 1"></a>
+      <figcaption> Simple qubit resulting in 0 or 1 </figcaption>      
+    </figure>
+
+    <p class="main_text">
+      I do my best to translate what I researched into my own words, so there may be some inaccuracies or (dare I say) misinformation. <br><br>Keeping the most basic explaination in mind, Quantum Computing seems rather simple and similar to a classical computer, where <strong><em>bits</em></strong> have a result of 0 and 1, and <strong><em>qubits</em></strong> having a result of 0 and 1. However, this is where the <em>magic</em> of quantum physics exists, and a qubit can actually exist in <strong><em>both</em></strong> states at the same time, or even any state in between simultaneously. Only when the qubit gets measured would the result "collapse" to be either the result we see of 0 or 1. There becomes a relative probability of which state the qubit will be when eventually measured. Qubits exhibit this magic behavior making a quantum computer have incredible potential.
+    </p>
+      <figure>
+        <a href="/imgs/qubit_superposition.png" target="_blank">
+        <img class="base" src="/imgs/qubit_superposition.png" alt="Picture of probability of a qubit's superposition"></a>
+        <figcaption> Probability of simple qubit superposition  </figcaption>        
+      </figure>
+
+    </div>
+    <!-- NEXT SECTION -->
+    <a class="top" href="#top" color=""> Back to top </a>
+    <hr>
+    <br>
+    <h2>COMPUTATIONAL ADVANTAGE</h2>
+    <div class="right_just">
+    <p class="main_text">
+      A qubit has the ability to be in <strong><em>both</em></strong> states at the same time. This spectrum of <strong><em>infinite</em></strong> states is referred to as the <strong>quantum superposition</strong>, more details under <strong><em>Q~Computing</em></strong> page. Before any measuring is completed, there is a relative probability, some percentage, of finding the qubit to be one, or the other, of the base states. One qubit has 2 possible states, and therefore 2 quantum superpositions. Now combining 2 interacting qubits, it grows to have 4 possible states between the 2 qubits. But wait, again this sounds exactly like classical bits, where 2 bits also have 4 possible states - <strong><em>00, 01, 10, and 11</em></strong>. To get the result using classical bits, 2 bits of information are needed to determine said result, the first digit, like a <strong><em>0</em></strong>, then the second digit, like a <strong><em>1</em></strong>, combining to the result of <strong><em>10</em></strong> (goes from right to left), or <strong><em>2</em></strong> in decimal. <br>
+    </p>
+      <figure>
+        <a href="/imgs/qubit_percent.png" target="_blank">
+        <img class="base" src="/imgs/qubit_percent.png" alt="Picture of a qubit and some probability, in percentage" target="_blank"> </a>
+        <figcaption> Simple qubit with percentages</figcaption>
+      </figure>
+    </div>
+<br>
+    <!--<div class="right_just">
+       <figure>
+        <a href="/imgs/qubit_basic.png" target="_blank">
+        <img class="base" src="/imgs/qubit_basic.png" alt="2 qubits equates to 4 superpositions"></a>
+        <figcaption>
+          2 qubits and their 4 total superpositions
+        </figcaption>
+      </figure>
+      <p class="main_text">
+        Now with 2 qubits having 4 possible states, this also means there would be 4 total superpositions. A side by side comparison of 2 bits and 2 qubits goes like this: take a binary number of 10, which has only 2 digits, a 1, then a 0, to determine the value of 10, or 2 decimal. This one number is determined by just 2 bits of information, where the value of the first bit, and the value of the second bit gives a result. Now with the qubits, each digit can be represented by a superposition, so having 4 possible digits, and can be written having a coefficient times each of the 4 possibilites, which is hopefully demonstrated by this next graphic. 
+      </p>
+    </div> -->
+    <div class="right_just">
+      <figure>
+        <a href="/imgs/qubit_data.png" target="_blank">
+        <img class="base" src="/imgs/qubit_data.png" alt="Picture of a qubit and coefficients"></a>
+        <figcaption> 2 qubits with 4 coefficients</figcaption>
+      </figure>
+      <p class="main_text">
+        Now with 2 qubits having 4 possible states, this also means there would be 4 total superpositions. Per the figure - the &alpha;(alpha) coefficent times the 00, plus the &beta;(beta) coefficient times the 01, plus the &gamma;(gamma) coefficient times the 10, and finally plus the &delta;(delta) coefficient times the 11, equates to the 4 possible states of these 2 qubits. Conclusively, 2 bits result in 2 pieces of information, the 2 bits; 2 qubits result in 4 pieces of information, the 4 possible superpositions. This will continue to grow, where 3 qubits would have 8 superpositions. Therefore, an <strong><em>N</em></strong> number of qubits equates to <strong><em>2<sup>N</sup></em></strong> in relation to classical bit information. 
+      </p>
+    </div>
+      <!--  NEXT SECTION -->
+    <a class="top" href="#top" color=""> Back to top </a>
+    <hr>
+    <br>
+    <h2>MISCALLANEOUS</h2>
+        <div class="right_just">
+          <p class="main_text">  Additionally, <strong><em>quantum entaglement</em></strong> is important for qubits to work. Finally, it is not possible for us to measure the superposition states, thus all this previous possible data is lost as soon as it does get measured. Due to this, relative probability and quantum logical gates now come into play. A quantum computer is designed, so that the logic operations can allow for the qubits to have deterministic results, meaning to get to the final result that can actually be measured in one unique state. A superposition is further explained under <em>superposition</em> section in the <strong><em>Q~computing</em></strong> page. 
+         
+            <br><br> Quantum Computers are not a replacement for classical computers, as again classical computers are insanely fast, thus are good for calculators, 3D processing, audio, and more. A quantum computer does computations differently, and in many cases is slower than classical, but the differences are highly advantageous in areas like <em>encryption, algorithms and more</em> that are actually slow, or even <em>impossible</em> for classical computers to solve (at least within the limited time of human existance). 
+          </p>
+          <figure>
+            <a href="/imgs/Schrodingers_cat.png" target="_blank">
+            <img class="cat" src="/imgs/Schrodingers_cat.png" alt="Picture of Schrodingers cat experiment"> </a>
+            <figcaption> Schrodingers cat - <a href="https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat#/media/File:Schrodingers_cat.svg" target="_blank">Link</a></figcaption>
+          </figure>
+        </div>
+    <a class="top" href="#top" color=""> Back to top </a>
+    <hr>
+    <br>
+    <h2>RESOURCES</h2>
+      <div style="display:flex; justify-content: center;">
+      <p style="font-family: Helvetica; font-size: 1.25em; text-align: left;">
+        Credits for some of this information and graphics to these resources below:
+      </p></div>
+
+      <div class="right_just">
+        <p class="main_text"><br> Veritasium and this youtube video: <br> <strong> <em>How Does a Quantum Computer Work?</em></strong> 
+          <iframe height="252" width="448" src="https://www.youtube.com/embed/g_IaVepNDT4?si=AW30Jy8zDJUHN0aa" title="Quantum Computers, explained with MKBHD" frameborder="0"  allowfullscreen></iframe>
+        </p>
+        <p class="main_text"><br> Cleo Abram and this youtube video: <br><strong><em>Quantum Computers, explained with MKBHD</em></strong> 
+          <iframe height="252" width="448" src="https://www.youtube.com/embed/e3fz3dqhN44?si=i9eZFY15RnxEgpA2" title="Quantum Computers, explained with MKBHD" frameborder="0"  allowfullscreen></iframe>
+        </p>
+
+      </div>
+
+    <br>
+    <a class="top" href="#top" color=""> Back to top </a>
+
+  </main>
+    <!-- bottom of page -->
+    <br>
+    <footer>
+      <div>
+        <br>     
+        CST_336 Internet Programming. 2023&copy; Bonavida<br>
+        <strong> Disclaimer:</strong> This website is under construction and is both functional and non-functional, simulatenously - A functional superposition. Currently for academic purposes.
+      </div>
+  </footer>
+</body>
+
+</html>
